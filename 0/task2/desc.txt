@@ -1,0 +1,49 @@
+int f(int a)
+{
+	return a + sum_of_digits(a);
+}
+
+where the sum_of_digits is a function ( int sum_of_digits(int a) )
+e.g
+
+sum_of_digits(123) = 6
+sum_of_digits(876) = 21
+
+The first line contains a number 'N' the length of the array and the number of queries.
+The second line contains 'N' number between 0 and 1'000'000'000 this is the input array.
+The third line contains 'N' number between 0 and 1'000'000'000 this are the queries.
+
+
+Task :
+
+print an integer for every query what is the closest fdistance number from the array. If there is multiple solution print the smallest answer. (here the closest fdistance means: fdistance(int a, int b) = abs(f(a)-f(b));
+
+Sample input:
+
+5
+1 100 20 6 80
+2
+90
+9
+3
+4
+
+
+f(1) = 2
+f(100) = 101
+f(20) = 22
+f(6) = 12
+f(80) = 88
+
+f(2) = 4
+f(90) = 99
+f(9) = 18
+f(3) = 6
+f(4) = 8
+
+Sample output
+1
+100
+20
+2
+6

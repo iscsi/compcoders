@@ -1,0 +1,24 @@
+The first line contains a number 'N' the length of the array and the number of queries.
+The second line contains 'N' number between 0 and 1'000'000'000 this is the input array.
+The third line contains 'N' number between 0 and 1'000'000'000 this are the queries.
+
+Task :
+
+print an integer for every query what is the closest number from the array. If there is multiple solution print the smallest answer.
+
+Sample input:
+
+5
+1 100 20 6 80
+2
+90
+9
+3
+4
+
+Sample output
+1
+80
+6
+1
+6
