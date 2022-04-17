@@ -5,5 +5,5 @@ python gen.py 100000 > in_100k.txt
 python gen.py 1000000 > in_1m.txt
 
 
-then use these input as an inputs for the task1 and task2
+then use these output files as an inputs for the task1 and task2
 Try to solve task1 and task2 in different ways (e.g with set, vector), and measure your solution running time with chrono.
