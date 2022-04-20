@@ -1,0 +1,4 @@
+1: https://cses.fi/problemset/task/1646
+2: https://cses.fi/problemset/task/1647
+3: https://codeforces.com/contest/433/problem/B
+4: https://codeforces.com/contest/363/problem/B

@@ -1,0 +1,5 @@
+1: https://www.spoj.com/problems/PHONELST/
+2: https://www.codechef.com/problems/NPLFLF
+3: https://cses.fi/problemset/task/1753
+4: https://cses.fi/problemset/task/1733
+5: https://cses.fi/problemset/task/1111
