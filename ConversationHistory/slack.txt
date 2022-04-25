@@ -1,0 +1,99 @@
+--> Istvan Nagy
+Correctness:
+Readability:
+Speed:
+Competitive programming competition:
+Correctness: This is the most important here, if your code is failing you will get 0 point, also if you submit and fail on some cases, then your second try will earn less point even if it passes. So usually in the competitions we spend few minutes to generate tests after passing all the sample cases and before submit. Important to test the corner cases also around the the constraints limits. Of course it depends on the problem level how much time we spend on it, maybe if its very easy just a minute (sometimes I even doesn't checking is it compiles because if it doesn't compile it doesn't count as a wrong answer), but if its hard then maybe 3-5 minute. The prepared contestants usually also has some generators to create large input. (e.g like random, large trees etc)
+Speed: This is critical here because you get the points based on this.
+Readability: This is sometimes disadvantage here, because the other contestants can get some extra points if they found an error in your solution.
+Interview: (this is about the whiteboard interviews, or when your code will be read by the company)
+Readability: The most important thing, e.g here you should avoid non standard typedef shortenings, so basically the code should look like when you send your code to code review in you company
+Correctness: This is less crucial, of course the solution logic should be correct but you can make mistakes. At the end of the implementation you should check the corner cases (running/following your code line by line with the interviewer) and maybe write some unit tests basically talking about how you would test your code correctness.
+Speed: This is not so crucial as the first two I think, but usually you have very limited time. (edited.)
+
+
+--> Istvan Nagy  7:51 PM
+Interview preparation:
+probably hackerrank, leetcode is a good starting point, although I am not very familiar with these, especially with the problems quality and the test cases coverage. I think Kurt already found some problems where the test cases are weak.
+Currently the two best competitive programming websites
+* codeforces.com : here probably you should start with the educational rounds (I think unfortunately these are on Tuesday afternoon), you also can make here virtual competitions.
+* atcoder.jp : I would suggest the Atcoder beginner contest here : this is also not so easy, but the quality really high, and the contests are on Sunday
+to participate these contests you also can practice the time pressure what is really really high on these competitions.
+Other type of contests:
+*  codechef.com (long contest) If you want less time pressure you can try this monthly competition, here you have 10 days to solve several problems, maybe with this easier to start
+When we can check the correctness of a problem solution easily its called binary problems, and when the solution is not calculatable then we try to give an approximation solution this called usually heuristic problem/contests:
+* https://www.codingame.com/
+* atcoder heuristic contests
+* kaggle mostly machine learning contests
+
+--> Istvan Nagy
+Resources:
+https://cses.fi/book/book.pdf , with a problemset, where you can little bit practice : https://cses.fi/problemset/
+https://cp-algorithms.com/
+https://victorlecomte.com/cp-geo.pdf This is less important, but worth to read at least the precision issues after that you will probably always will try to avoid using floating point calculations :slightly_smiling_face: (edited)
+
+
+--> Istvan Nagy
+My suggestion would be to start with these topics :
+1: Graph traversal (bfs, dfs, topological sort)
+2: prefix sum array (fenwick tree?!)
+3: strings, hashing
+4: Combinatorics fundamentals
+5: binary/ternary search
+6: recursion/ memoization / dynamic programming fundamentals
+I think this topics probably the most important for interviews, there are other topics what are important for competitions but I would consider those at the beginning, and after this first 6 round, you/we can do another rounds to check little bit advanced algortihms/data structures on the same topic, e.g
+7: Graph dijkstra/ bellman ford/ floyd warshall
+8: strongly connected graphs
+9: 2 sat
+10: prefix sum array more advanced data structures: fenwick tree, segment tree
+etc
+so if you accept these topics, then I would search few problems around 5 from easy to hard, what you can try to solve, and after that we can check your solutions, and discuss it etc.
+
+
+--> Istvan Nagy
+1st Topic Graph traversal (I would suggest to read this topic from the first Resource (book.pdf page 117-120)
+Tasks: (I will add all task in separate message so we can discuss in threads there) (edited) 
+
+
+--> Istvan Nagy
+1: https://codeforces.com/problemset/problem/1020/B
+2: https://codeforces.com/problemset/problem/948/A
+3: https://codeforces.com/problemset/problem/377/A
+4: https://codeforces.com/problemset/problem/510/C
+5: https://codeforces.com/problemset/problem/1263/D
+this one try to solve with BFS, DFS, and create two different DFS solution one with recursive function and with recursive lambdas, submit your solution with different compilers, and compare the running times.. (edited) 
+6: https://cses.fi/problemset/task/1680
+
+
+--> Istvan Nagy
+These problems are not so hard, but I think at the beginning we should focus on correctness, so please testing your solution before submit, to try to achieve Accepted verdict on the first submit, then if you want you can try to speed up your solution. (edited) 
+You can get WA  (Wrong Answer) from the server, if there is such a test where your solution doesn't provide the correct result. (edited) 
+you can get TLE (Time limit Exceeded) when your solution slow, or you solution waiting some input (so the solution incorrect)
+and also can get RE (runtime error) on some input your solution is crashing
+
+
+--> Istvan Nagy
+2nd Topic: Prefix sums / cumulative sums / (in the book :  Static array queries p 83- 86) (edited)
+1: https://cses.fi/problemset/task/1646
+2: https://cses.fi/problemset/task/1647
+3: https://codeforces.com/contest/433/problem/B
+4: https://codeforces.com/contest/363/problem/B
+If you solved a problem maybe you can push to the above github project your solution, then it would be easier to compare the results and discuss your approaches later. (edited) 
+
+--> Istvan Nagy
+3rd Topic: String algorithms : (book 243-247)  : for interviews important to know the trie data structure, and the string hashing. The Z-algorithm or KMP (Knuth Morris Pratt) are not so important for interviews (I guess no one will ask you to implement it in a 45 minute interview) but important to know the theorem and the complexity. So I think in the second iteration when we would go through the same topics again just checking little bit advanced things we would check one or both.
+1: https://www.spoj.com/problems/PHONELST/
+2: https://www.codechef.com/problems/NPLFLF
+3: https://cses.fi/problemset/task/1753
+4: https://cses.fi/problemset/task/1733
+5: https://cses.fi/problemset/task/1111
+Here the problems are little bit more time consuming especially the first two, maybe the hashing related problems 3-5 easier to solve. (edited) 
+
+
+--> 
+you can add your favorite includes, and write some macros if you want at the beginning
+chrono is important if you want to be sure you under the time limit, e.g you can create a local tests close to the constraints to check your running time
+freopen in/out is good if you don't want to always write the sample in, and to be sure you don't make a typo
+probably the isDebuggerPresent is unnecessary for you, I just use this to differentiate when I run the executable via VS or command line
+
+
